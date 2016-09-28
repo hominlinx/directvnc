@@ -69,8 +69,8 @@ dfb_init(int argc, char *argv[])
      DFBCHECK(dfb->CreateSurface(dfb, &dsc, &primary ));
      primary->GetSize (primary, &opt.client.width, &opt.client.height);
 
-     DFBCHECK(dfb->GetInputDevice( dfb, DIDID_KEYBOARD, &keyboard ));
-     DFBCHECK(dfb->GetInputDevice( dfb, DIDID_MOUSE, &mouse ));
+     //DFBCHECK(dfb->GetInputDevice( dfb, DIDID_KEYBOARD, &keyboard ));
+     //DFBCHECK(dfb->GetInputDevice( dfb, DIDID_MOUSE, &mouse ));
      DFBCHECK (dfb->CreateInputEventBuffer (dfb, DICAPS_ALL, DFB_TRUE, &input_buffer));
 }
 
